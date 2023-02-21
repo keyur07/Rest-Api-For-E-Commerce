@@ -133,7 +133,7 @@ INSERT INTO `product` (`productid`, `description`, `image`, `pricing`, `shipping
 --
 
 CREATE TABLE `user` (
-  `userid` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` text NOT NULL,
   `username` varchar(50) NOT NULL,
