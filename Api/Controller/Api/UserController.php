@@ -183,8 +183,8 @@ class UserController extends BaseController
         }
     }
 
-    //Insert Comments on products
-    //user/insertComments
+    //get Comments on products
+    //user/Comment
     public function commentAction(){
 
         $strErrorDesc = '';
