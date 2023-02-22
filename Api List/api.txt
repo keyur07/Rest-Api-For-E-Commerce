@@ -1,0 +1,90 @@
+1.signup
+
+link: http://localhost/Assignment2/Api/index.php/user/signup
+
+username
+email
+password
+
+2.SignIn
+
+link:http://localhost/assignment2/Api/index.php/user/login
+
+username
+password
+
+3.get product
+
+link : http://localhost/assignment2/Api/index.php/user/product
+
+4.get Comment
+
+linlk: http://localhost/assignment2/Api/index.php/user/comment
+
+product_id
+
+5.Delete comments
+
+link: http://localhost/assignment2/Api/index.php/user/deletecomment
+
+productid
+userid
+
+6.insert Comments
+
+link: http://localhost/assignment2/Api/index.php/user/insertcomment
+
+productid
+userid
+rating
+img
+txt
+
+7.Insert Order Details
+
+link: http://localhost/assignment2/Api/index.php/user/insertorder
+
+userid
+invoiceno
+image
+userid
+invoiceno
+price
+tax
+ratting
+payment
+
+8. Get Order
+
+link : http://localhost/assignment2/Api/index.php/user/getorder
+
+userid
+
+9. Cart Update
+
+link : http://localhost/assignment2/Api/index.php/user/cartdetailsupdate
+
+cartid
+userid
+quantities
+
+
+10. Cart Delete
+
+link : http://localhost/assignment2/Api/index.php/user/cartdetailsdelete
+
+cartid
+
+11.get Cart Details
+
+link : http://localhost/assignment2/Api/index.php/user/cartdetails
+
+userid
+
+12.get All selected cart
+link: http://localhost/assignment2/Api/index.php/user/cartdetailsinsert
+
+productid
+userid
+quantities
+user

@@ -487,8 +487,7 @@ class UserController extends BaseController
     }
 
     //Get CartDetails
-    //http://localhost/Assignment2/index.php/api/user/cartdetails
-
+ 
     public function cartdetailsAction()
     {
         $strErrorDesc = '';
@@ -525,7 +524,7 @@ class UserController extends BaseController
     }
 
     //Insert CartDetails
-    //http://localhost/Assignment2/index.php/api/user/cartdetailsinsert
+
 
     public function cartdetailsinsertAction()
     {
@@ -572,7 +571,6 @@ class UserController extends BaseController
     }
 
     //Update CartDetails
-    //http://localhost/Assignment2/index.php/api/user/cartdetailsupdate
 
     public function cartdetailsupdateAction()
     {
@@ -606,19 +604,18 @@ class UserController extends BaseController
         // send output 
         if (!$strErrorDesc) {
             $this->sendOutput(
-                json_encode(array('Code'=>'200','message'=>'Updated Successfully','status'=>'false')),
+                json_encode(array('Code'=>'200','message'=>'Updated Successfully','status'=>'true')),
                 array('Content-Type: application/json', 'HTTP/1.1 200 OK')
             );
         } else {
-            $this->sendOutput(json_encode(array('Code'=>'200','status'=>'false','error' => $strErrorDesc)), 
+            $this->sendOutput(json_encode(array('Code'=>'404','status'=>'false','error' => $strErrorDesc)), 
                 array('Content-Type: application/json', $strErrorHeader)
             );
         }
     }
 
     //Delete CartDetails
-    //http://localhost/Assignment2/index.php/api/user/cartdetailsdelete
-
+  
     public function cartdetailsdeleteAction()
     {
         $strErrorDesc = '';
@@ -647,11 +644,11 @@ class UserController extends BaseController
         // send output 
         if (!$strErrorDesc) {
             $this->sendOutput(
-                json_encode(array('Code'=>'200','message'=>'Deleted Successfully','status'=>'false')),
+                json_encode(array('Code'=>'200','message'=>'Deleted Successfully','status'=>'true')),
                 array('Content-Type: application/json', 'HTTP/1.1 200 OK')
             );
         } else {
-            $this->sendOutput(json_encode(array('Code'=>'200','status'=>'false','error' => $strErrorDesc)), 
+            $this->sendOutput(json_encode(array('Code'=>'404','status'=>'false','error' => $strErrorDesc)), 
                 array('Content-Type: application/json', $strErrorHeader)
             );
         }

@@ -64,7 +64,7 @@ class UserModel extends Database
 
     public function updateCartDetail($cartid, $userid, $quantities)
     {
-        return $this->update("UPDATE cart SET quantities='$quantities' WHERE cartid = '$cartid' AND userid = '$userid'");
+        return $this->insert("UPDATE cart SET quantities='$quantities' WHERE cartid = '$cartid' AND userid = '$userid'");
     }
 
     //add new item in cart
@@ -78,7 +78,7 @@ class UserModel extends Database
     //delete cart items from cart
     public function deleteCartDetail($cartid)
     {
-        return $this->delete("DELETE FROM cart WHERE cartid = '$cartid'");
+        return $this->insert("DELETE FROM cart WHERE cartid = '$cartid'");
     }
 
 }
